@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from "./pages/Table";
+import Home from "./pages/Home";
+import {Link} from "react-router-dom";
+import MyRouter from "./rout/Router";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let x = 1;
+    let c = 7;
+    return (
+        <div>
+            {}
+            <Link to="/list"> Go List </Link>
+            <Link to="/save">Create</Link>
+            <MyRouter/>
+        </div>
+
+    );
 }
 
 export default App;
