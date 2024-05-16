@@ -1,5 +1,9 @@
+import {useEffect} from "react";
 
 function Table (){
+    useEffect(()=>{
+        localStorage.setItem('token','')
+    })
     return(
     <div>
         <table>

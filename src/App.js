@@ -4,16 +4,16 @@ import Table from "./pages/Table";
 import Home from "./pages/Home";
 import {Link} from "react-router-dom";
 import MyRouter from "./rout/Router";
+import Nac from "./pages/Nac";
 
 function App() {
-    let x = 1;
-    let c = 7;
     return (
         <div>
-            {}
-            <Link to="/list"> Go List </Link>
-            <Link to="/save">Create</Link>
-            <MyRouter/>
+            <Nac/>
+            <div style={{marginTop : 100}}>
+                <MyRouter/>
+            </div>
+
         </div>
 
     );
